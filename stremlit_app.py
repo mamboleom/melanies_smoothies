@@ -3,7 +3,7 @@ import streamlit as st
 from snowflake.snowpark.functions import col
 import requests
 # Write directly to the app
-st.title("🥤 Customize Your Smoothie! 🥤")
+st.set_page_config(page_title="Smoothie Builder", page_icon="🥤")
 st.write("Choose the fruits you want in your custom Smoothie!")
 
 name_on_order = st.text_input("Name on Smoothie:")
