@@ -35,4 +35,8 @@ if ingredients_list:
         session.sql(my_insert_stmt).collect()
         # Corrected indentation: this must be inside the 'if time_to_insert' block
         st.success('Your Smoothie is ordered!', icon="✅")
+#New section to diplay smoothiefroot nutrition information
+import requests
+smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+st.text(smoothiefroot_response)
 
